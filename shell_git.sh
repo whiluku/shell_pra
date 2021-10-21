@@ -13,7 +13,7 @@ read -p "git add and commit  ok? (y/N): " yn
 
 case "$yn" in [yY]*) ;; *) echo "abort." ;return;; esac
 git add .
-git commit
+git commit -a -m "$date"
 
 echo "#######################################"
 echo "exec commit"
